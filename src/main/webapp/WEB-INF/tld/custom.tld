@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<taglib xmlns="http://java.sun.com/JSP/TagLibraryDescriptor"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/ web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>captcha</short-name>
+    <uri>/WEB-INF/tld/custom.tld</uri>
+    <tag>
+        <name>captcha-tag</name>
+        <tag-class>com.mishchenkov.tag.CaptchaTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>value</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>lang</name>
+        <tag-class>com.mishchenkov.tag.LanguageSelectorTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>language</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>langList</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>login</name>
+        <tag-class>com.mishchenkov.tag.LoginTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>user</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>com.mishchenkov.entity.User</type>
+        </attribute>
+    </tag>
+
+    <tag>
+        <name>prodPagination</name>
+        <tag-class>com.mishchenkov.tag.ProductPaginationTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>url</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>page</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String[]</type>
+        </attribute>
+        <attribute>
+            <name>prefix</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>position</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</taglib>

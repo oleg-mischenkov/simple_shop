@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Resource name="jdbc/ST_FOR_CONNECTION"
+              auth="Container"
+              type="javax.sql.DataSource"
+              username="epam"
+              password="55555"
+              defaultAutoCommit="false"
+              defaultTransactionIsolation="READ_COMMITTED"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/test?serverTimezone=UTC&amp;useSSL=false"/>
+</Context>
